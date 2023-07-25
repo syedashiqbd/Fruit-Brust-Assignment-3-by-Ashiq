@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <title>Fruit Burst</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/fe577d35dc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tailwind CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+      .wrapper {
+        max-width: 1440px;
+      }
+      .bg-color {
+        background-color: #f85559;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="wrapper font-lato lg:mx-auto">
+      <!-- Nav bar start -->
+      <nav>
+        <div
+          class="flex justify-between items-center bg-color px-12 py-6 rounded-[600px] my-12"
+        >
+          <div>
+            <a class="text-white text-18 font-medium mr-7">Home</a>
+            <a class="text-white text-18 font-medium mr-7">About Us</a>
+            <a class="text-white text-18 font-medium mr-7">Shop</a>
+            <a class="text-white text-18 font-medium mr-7">All Fruits</a>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/logo.png" alt="" srcset="" />
+            <h1 class="text-white text-4xl font-bold ml-4">Fruit Burst</h1>
+          </div>
+          <div class="">
+            <div
+              class="flex justify-between items-center rounded-[50px] border px-3 w-[400px] bg-white"
+            >
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input focus:outline-none"
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Nav bar end -->
+
+      <div class="banner"></div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
