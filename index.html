@@ -300,18 +300,20 @@
 
     <main>
       <!-- deal of the day section start -->
-      <section class="wrapper font-lato lg:mx-auto">
+      <section class="lg:w-[1440px] md:w-[700px] w-[375px] font-lato mx-auto">
         <!-- top section of deal -->
         <div
-          class="w-[375px] lg:w-full mx-auto p-5 lg:p-0 lg:flex lg:justify-between lg:items-center"
+          class="py-5 lg:py-0 lg:flex lg:justify-between lg:items-center md:flex md:justify-between md:items-center"
         >
           <!-- left information -->
-          <div class="text-center lg:text-left">
-            <h2 class="text-[#121212] text-3xl lg:text-5xl font-bold">
+          <div class="text-center lg:text-left md:text-left">
+            <h2
+              class="text-[#121212] text-3xl lg:text-5xl md:text-3xl font-bold"
+            >
               Deal of the day
             </h2>
             <p
-              class="lg:w-2/3 text-[#12121299] text-sm lg:text-base font-medium mb-8 mt-3 lg:mt-6 lg:mb-12"
+              class="lg:w-2/3 md:w-3/4 text-[#12121299] text-xs md:text-sm lg:text-base font-medium mb-8 mt-3 lg:mt-6 lg:mb-12"
             >
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
@@ -321,7 +323,7 @@
 
           <!-- right timer -->
           <div
-            class="grid grid-flow-col gap-2 lg:gap-5 text-center auto-cols-max"
+            class="grid grid-flow-col gap-2 lg:gap-5 md:gap-2 text-center auto-cols-max justify-center"
           >
             <!-- Days -->
             <div class="flex flex-col items-center">
@@ -418,7 +420,7 @@
 
         <!-- bottom Card/shop section of the deal -->
         <div
-          class="cards_area w-[350px] lg:w-full mx-auto grid lg:grid-cols-4 grid-cols-1 justify-between gap-6"
+          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-between gap-6"
         >
           <!-- 1st card -->
           <div class="card text-center p-12 border rounded-lg space-y-6">
@@ -533,8 +535,10 @@
       <!-- deal of the day section end -->
 
       <!-- team section start -->
-      <section class="lg:w-[1440px] w-[375px] font-lato mx-auto mt-10 lg:mt-32">
-        <div class="relative lg:h-[690px] h-[1340px]">
+      <section
+        class="lg:w-[1440px] md:w-[700px] w-[375px] font-lato mx-auto mt-10 lg:mt-32"
+      >
+        <div class="relative lg:h-[690px] md:h-[800px] h-[1340px]">
           <img src="./images/team.png" class="hidden lg:block" />
           <img
             src="./images/team-mb.png"
@@ -549,16 +553,18 @@
           <div
             class="w-9/12 mx-auto text-center text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
           >
-            <h1 class="lg:text-5xl text-2xl font-extrabold">
+            <h1 class="lg:text-5xl md:text-3xl text-2xl font-extrabold">
               Meet the team section
             </h1>
-            <p class="lg:text-base text-sm lg:mt-6 lg:mb-12 mt-1 mb-6">
+            <p class="lg:text-base text-sm lg:mt-6 lg:mb-12 md:mb-8 mt-1 mb-6">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical <br />
               Latin literature from 45 BC, making it over 2000 years old.
             </p>
             <!-- profile card area -->
-            <div class="grid lg:grid-cols-4 grid-cols-1 lg:gap-20 gap-8">
+            <div
+              class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-20 gap-8"
+            >
               <!-- 1st profile card -->
               <div class="profile_card flex flex-col items-center">
                 <img src="./images/member1.png" class="" alt="" srcset="" />
