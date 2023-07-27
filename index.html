@@ -94,7 +94,7 @@
       <!-- Nav bar end -->
 
       <!-- Banner Start -->
-      <div class="lg:w-[1440px] w-[385px] font-lato mx-auto">
+      <div class="lg:w-[1440px] w-[375px] font-lato mx-auto">
         <!-- carousel area -->
         <div class="carousel">
           <!-- Slide 1 -->
@@ -303,7 +303,7 @@
       <section class="wrapper font-lato lg:mx-auto">
         <!-- top section of deal -->
         <div
-          class="w-[385px] lg:w-full mx-auto p-5 lg:p-0 lg:flex lg:justify-between lg:items-center"
+          class="w-[375px] lg:w-full mx-auto p-5 lg:p-0 lg:flex lg:justify-between lg:items-center"
         >
           <!-- left information -->
           <div class="text-center lg:text-left">
@@ -533,7 +533,7 @@
       <!-- deal of the day section end -->
 
       <!-- team section start -->
-      <section class="lg:w-[1440px] w-[385px] font-lato mx-auto mt-10 lg:mt-32">
+      <section class="lg:w-[1440px] w-[375px] font-lato mx-auto mt-10 lg:mt-32">
         <div class="relative lg:h-[690px] h-[1340px]">
           <img src="./images/team.png" class="hidden lg:block" />
           <img
@@ -926,22 +926,28 @@
       <!-- team section end -->
 
       <!-- choose us section start -->
-      <section class="wrapper font-lato lg:mx-auto mt-32 hidden">
+      <section class="lg:w-[1440px] w-[375px] font-lato mx-auto lg:mt-32 mt-10">
         <!-- choose us top info -->
-        <div class="text-center">
-          <h2 class="text-[#121212] text-5xl font-bold">Why Choose Us</h2>
-          <p class="text-[#12121299] text-base font-medium mt-6 mb-12">
+        <div class="text-center lg:p-0">
+          <h2 class="text-[#121212] lg:text-5xl text-2xl font-bold">
+            Why Choose Us
+          </h2>
+          <p
+            class="text-[#12121299] lg:text-base text-sm font-medium lg:mt-6 lg:mb-12 mt-3 mb-3 px-5 lg:w-1/2 lg:mx-auto"
+          >
             Contrary to popular belief, is not simply random text. It has roots
-            in a piece of classical <br />
-            Latin literature from 45 BC, making it over 2000 years old.
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
           </p>
         </div>
         <!-- choose us 3 column -->
-        <div class="mt-12 grid lg:grid-cols-3 gap-12">
+        <div class="lg:mt-12 mt-6 grid lg:grid-cols-3 gap-12">
           <!-- 1st column -->
-          <div class="left">
+          <div class="left order-2 lg:order-none">
             <!-- 1st card -->
-            <div class="flex items-start gap-6">
+            <div
+              class="flex gap-6 lg:flex-row flex-col items-center text-center lg:text-left"
+            >
               <div class="card_icon p-4 bg-gray-200 rounded-full">
                 <img src="./images/dedicatedteam.png" alt="" srcset="" />
               </div>
@@ -949,15 +955,19 @@
                 <h2 class="text-[#121212] text-2xl font-extrabold">
                   Dedicated Team
                 </h2>
-                <div class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"></div>
-                <p>
+                <div
+                  class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2 mx-auto lg:mx-0"
+                ></div>
+                <p class="mb-10 lg:mb-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- 2nd card -->
-            <div class="flex items-start gap-6 mt-12 mb-12">
+            <div
+              class="flex gap-6 lg:flex-row flex-col items-center text-center lg:text-left lg:my-12"
+            >
               <div class="card_icon p-4 bg-gray-200 rounded-full">
                 <img src="./images/fresh.png" alt="" srcset="" />
               </div>
@@ -965,15 +975,19 @@
                 <h2 class="text-[#121212] text-2xl font-extrabold">
                   Fresh is Best
                 </h2>
-                <div class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"></div>
-                <p>
+                <div
+                  class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2 mx-auto lg:mx-0"
+                ></div>
+                <p class="mb-10 lg:mb-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- 3rd card -->
-            <div class="flex items-start gap-6">
+            <div
+              class="flex gap-6 lg:flex-row flex-col items-center text-center lg:text-left"
+            >
               <div class="card_icon p-4 bg-gray-200 rounded-full">
                 <img src="./images/gift.png" alt="" srcset="" />
               </div>
@@ -981,8 +995,10 @@
                 <h2 class="text-[#121212] text-2xl font-extrabold">
                   Gift Certificates
                 </h2>
-                <div class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"></div>
-                <p>
+                <div
+                  class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2 mx-auto lg:mx-0"
+                ></div>
+                <p class="lg:mb-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -991,61 +1007,63 @@
           </div>
 
           <!-- 2nd column -->
-          <div class="middle flex items-center">
+          <div class="middle flex items-center order-1 lg:order-none">
             <img src="./images/whychoose1.png" alt="" srcset="" />
           </div>
 
           <!-- 3rd column -->
-          <div class="right text-right">
+          <div class="text-right order-3 lg:order-none">
             <!-- 1st card -->
-            <div class="flex flex-row-reverse items-start gap-6">
+            <div
+              class="flex gap-6 lg:flex-row-reverse flex-col items-center text-center lg:text-right"
+            >
               <div class="card_icon p-4 bg-gray-200 rounded-full">
                 <img src="./images/supplier.png" alt="" srcset="" />
               </div>
-              <div class="card_text">
+
+              <div class="card_text flex flex-col items-center lg:items-end">
                 <h2 class="text-[#121212] text-2xl font-extrabold">
                   Integrated Supplier
                 </h2>
-                <div
-                  class="ml-auto w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"
-                ></div>
-                <p>
+
+                <div class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"></div>
+                <p class="mb-10 lg:mb-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- 2nd card -->
-            <div class="flex flex-row-reverse items-start gap-6 mt-12 mb-12">
+            <div
+              class="flex gap-6 lg:flex-row-reverse flex-col items-center text-center lg:text-right lg:mt-12 lg:mb-12"
+            >
               <div class="card_icon p-4 bg-gray-200 rounded-full">
                 <img src="./images/practice.png" alt="" srcset="" />
               </div>
-              <div class="card_text">
+              <div class="card_text flex flex-col items-center lg:items-end">
                 <h2 class="text-[#121212] text-2xl font-extrabold">
                   Sustainable Practice
                 </h2>
-                <div
-                  class="ml-auto w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"
-                ></div>
-                <p>
+                <div class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"></div>
+                <p class="mb-10 lg:mb-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- 3rd card -->
-            <div class="flex flex-row-reverse items-start gap-6">
+            <div
+              class="flex gap-6 lg:flex-row-reverse flex-col items-center text-center lg:text-right"
+            >
               <div class="card_icon p-4 bg-gray-200 rounded-full">
                 <img src="./images/benefits.png" alt="" srcset="" />
               </div>
-              <div class="card_text">
+              <div class="card_text flex flex-col items-center lg:items-end">
                 <h2 class="text-[#121212] text-2xl font-extrabold">
                   The Benefits Only
                 </h2>
-                <div
-                  class="ml-auto w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"
-                ></div>
-                <p>
+                <div class="w-[100px] h-[1px] bg-gray-500 mt-3 mb-2"></div>
+                <p class="mb-10 lg:mb-0">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
