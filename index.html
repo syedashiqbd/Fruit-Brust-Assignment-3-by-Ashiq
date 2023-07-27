@@ -47,24 +47,46 @@
       <!-- Nav bar start -->
       <nav>
         <div
-          class="flex justify-between items-center bg-color px-12 py-6 rounded-[600px] my-12"
+          class="flex justify-between items-center lg:bg-[#f85559] md:bg-[#f85559] px-5 py-3 lg:px-12 lg:py-6 md:px-4 rounded-[600px] my-4 lg:my-12"
         >
-          <!-- left menu -->
-          <div>
-            <a class="text-white text-18 font-medium mr-7">Home</a>
-            <a class="text-white text-18 font-medium mr-7">About Us</a>
-            <a class="text-white text-18 font-medium mr-7">Shop</a>
-            <a class="text-white text-18 font-medium mr-7">All Fruits</a>
+          <!-- Hamburger menu and left menu (visible on mobile devices) -->
+          <div class="flex lg:hidden md:hidden space-x-7">
+            <button
+              class="text-black daisy__collapse-control"
+              data-collapse-target="leftMenu"
+            >
+              <i class="fa-solid fa-bars text-3xl"></i>
+            </button>
           </div>
-          <!-- middle logo and name -->
+          <div
+            id="leftMenu"
+            class="hidden lg:flex md:flex space-x-7 daisy__collapse"
+            data-collapse-group
+          >
+            <a class="text-white text-18 font-medium">Home</a>
+            <a class="text-white text-18 font-medium">About Us</a>
+            <a class="text-white text-18 font-medium">Shop</a>
+            <a class="text-white text-18 font-medium">All Fruits</a>
+          </div>
+
+          <!-- middle logo and name (on the left for mobile) -->
           <div class="flex items-center">
-            <img src="./images/logo.png" alt="" srcset="" />
-            <h1 class="text-white text-4xl font-bold ml-4">Fruit Burst</h1>
+            <img
+              src="./images/logo.png"
+              alt=""
+              class="w-10 h-10 lg:w-auto lg:h-auto"
+            />
+            <h1
+              class="md:text-white lg:text-white lg:text-4xl text-xl font-bold ml-2 lg:ml-4"
+            >
+              Fruit Burst
+            </h1>
           </div>
-          <!-- right search box -->
-          <div class="">
+
+          <!-- right search box (hidden on mobile) -->
+          <div class="hidden lg:block md:block">
             <div
-              class="flex justify-between items-center rounded-[50px] border px-3 w-[400px] bg-white"
+              class="flex justify-between items-center rounded-[50px] border px-3 w-[200px] lg:w-[400px] md:w-[250px] bg-white"
             >
               <input
                 type="text"
@@ -79,7 +101,7 @@
       <!-- Nav bar end -->
 
       <!-- Banner Start -->
-      <div class="wrapper font-lato lg:mx-auto">
+      <div class="wrapper font-lato lg:mx-auto hidden">
         <!-- carousel area -->
         <div class="carousel w-full rounded-lg">
           <div id="slide1" class="carousel-item relative w-full">
@@ -277,7 +299,7 @@
 
     <main>
       <!-- deal of the day section start -->
-      <section class="wrapper font-lato lg:mx-auto">
+      <section class="wrapper font-lato lg:mx-auto hidden">
         <!-- top section of deal -->
         <div class="flex justify-between items-center">
           <!-- left information -->
@@ -502,7 +524,7 @@
       <!-- deal of the day section end -->
 
       <!-- team section start -->
-      <section class="wrapper font-lato lg:mx-auto mt-32">
+      <section class="wrapper font-lato lg:mx-auto mt-32 hidden">
         <div class="relative h-[690px]">
           <img src="./images/team.png" class="" />
           <div class="absolute rounded-lg inset-0 bg-black bg-opacity-60"></div>
@@ -884,7 +906,7 @@
       <!-- team section end -->
 
       <!-- choose us section start -->
-      <section class="wrapper font-lato lg:mx-auto mt-32">
+      <section class="wrapper font-lato lg:mx-auto mt-32 hidden">
         <!-- choose us top info -->
         <div class="text-center">
           <h2 class="text-[#121212] text-5xl font-bold">Why Choose Us</h2>
@@ -1016,7 +1038,9 @@
     </main>
 
     <!-- Footer section start -->
-    <footer class="flex justify-center h-[526px] font-lato bg-[#121212] mt-32">
+    <footer
+      class="flex justify-center h-[526px] font-lato bg-[#121212] mt-32 hidden"
+    >
       <div
         class="footer_info text-white flex flex-col justify-center items-center"
       >
@@ -1082,7 +1106,7 @@
     <input type="checkbox" id="my_modal_6" class="modal-toggle" />
     <div class="modal">
       <div
-        class="modal-box max-w-[800px] max-h-[815px] card text-center p-12 border rounded-lg space-y-6"
+        class="modal-box max-w-[700px] max-h-[750px] card text-center p-12 border rounded-lg space-y-6"
       >
         <img
           class="w-[287px] h-[355px] mx-auto"
@@ -1121,7 +1145,7 @@
     <input type="checkbox" id="my_modal_7" class="modal-toggle" />
     <div class="modal">
       <div
-        class="modal-box max-w-[800px] max-h-[815px] card text-center p-12 border rounded-lg space-y-6"
+        class="modal-box max-w-[700px] max-h-[750px] card text-center p-12 border rounded-lg space-y-6"
       >
         <img
           class="w-[287px] h-[355px] mx-auto"
@@ -1160,7 +1184,7 @@
     <input type="checkbox" id="my_modal_8" class="modal-toggle" />
     <div class="modal">
       <div
-        class="modal-box max-w-[800px] max-h-[815px] card text-center p-12 border rounded-lg space-y-6"
+        class="modal-box max-w-[700px] max-h-[750px] card text-center p-12 border rounded-lg space-y-6"
       >
         <img
           class="w-[287px] h-[355px] mx-auto"
@@ -1200,7 +1224,7 @@
     <input type="checkbox" id="my_modal_9" class="modal-toggle" />
     <div class="modal">
       <div
-        class="modal-box max-w-[800px] max-h-[815px] card text-center p-12 border rounded-lg space-y-6"
+        class="modal-box max-w-[700px] max-h-[750px] card text-center p-12 border rounded-lg space-y-6"
       >
         <img
           class="w-[287px] h-[355px] mx-auto"
